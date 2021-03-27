@@ -1,14 +1,14 @@
 {
-  "homepage":"http://sbengal2.github.io/crypto-tracker",
+  // "homepage":"http://sbengal2.github.io/crypto-tracker",
   "name": "nextjs-crypto-api",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d next build",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "heroku-postbuild":"npm run build"
+    // "start": "next start"
   },
   "dependencies": {
     "next": "10.0.9",
